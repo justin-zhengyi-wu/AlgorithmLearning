@@ -58,8 +58,8 @@ func fib2(n int) int {
 	var a0, a1, a int = 0, 1, 0
 	for i := 2; i <= n; i++ {
 		a = a0 + a1
-		a1 = a0
-		a0 = a
+		a0 = a1
+		a1 = a
 	}
 	return a
 }
