@@ -18,10 +18,8 @@ function my_strlen($str) {
     }
     $count = 0;
     while(true) {
-        if ($str[$count] != NULL) {
-            $count++;
-            continue;
-        } else {
+        $count++;
+        if ($str[$count] == NULL) {
             break;
         }
     }
@@ -46,4 +44,5 @@ function my_strcmp($str1, $str2) {
 
 $ret = my_strrev('asdfghjkl');
 //$ret = my_strcmp('abcde','abced');
+$ret = my_strlen('1234567890');
 echo($ret);
